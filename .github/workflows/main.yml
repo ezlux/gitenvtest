@@ -1,8 +1,8 @@
 on:
   push:
-    branches: [ test ]
+    branches: [ main ]
   pull_request:
-    branches: [ test ]
+    branches: [ main ]
 
 name: ezinvoice CI on ECR
 
