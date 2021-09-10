@@ -19,7 +19,7 @@ jobs:
 
     - name: Create env file
       env:
-        QA_ENV_FILE: ${{ EZINVOICE_ENV_FILE }}
+        QA_ENV_FILE: ${{ secrets.EZINVOICE_ENV_FILE }}
       run: |
         echo $QA_ENV_FILE | base64 --decode > .env
                
